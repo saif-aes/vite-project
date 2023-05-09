@@ -1,3 +1,5 @@
+import {Outlet} from "react-router-dom";
+
 export default function Root() {
     return (
         <>
@@ -48,7 +50,9 @@ export default function Root() {
             </div>
 
             {/* detail */}
-            <div id="detail"></div>
+            <div id="detail">
+                <Outlet />
+            </div>
         </>
     );
 }
